@@ -544,7 +544,8 @@ It check the safe area of that device and then renders the view
 
   Pro tip: Configure your Web bundler to ignore .native.js extensions in order to avoid having unused code in your production bundle, thus reducing the final bundle size.
 
-
+ 45 - 60 :
+  -> Pokemon cards
 
 
 
@@ -583,6 +584,7 @@ Native CLI :
 -> npm run android
 
  ** npx react-native start --experimental-debugger ** 
+
 
 ########################################################################################################################################################################################################################
 
