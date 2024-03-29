@@ -91,7 +91,9 @@ const styles = StyleSheet.create({
     fontSize: 22,
   },
   image: {
-    width: "100%",
+    // borderColor :'black',
+    // borderWidth : 5,
+    width: '100%',
     height: 200,
     marginBottom: 16,
   },
