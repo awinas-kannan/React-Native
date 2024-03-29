@@ -1,0 +1,35 @@
+buildscript {
+    ext {
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        ndkVersion = "25.1.8937393"
+        kotlinVersion = "1.8.0"
+    }
+    repositories {
+        google()
+        mavenCentral {
+            setUrl("https://repository.walmart.com/content/repositories/public")
+        }
+ 
+        // maven { url "https://repository.walmart.com/content/repositories/atlassian-public/" }
+        maven { url "https://repository.walmart.com/content/groups/public" }
+        // maven { url "https://repository.walmart.com/content/repositories/pangaea_snapshots/" }
+        // maven { url "https://repository.walmart.com/content/repositories/pangaea_releases/" }
+        maven { url 'https://repo.wal-mart.com/content/repositories/snapshots' }
+        maven { url "https://repo.wal-mart.com/content/repositories/walmart" }
+        maven { url "https://repository.walmart.com/content/repositories/jcenter" }
+        maven { url "https://repository.walmart.com/content/repositories/central/" }
+        jcenter {
+            setUrl("https://repository.walmart.com/content/repositories/jcenter")
+        } 
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"
