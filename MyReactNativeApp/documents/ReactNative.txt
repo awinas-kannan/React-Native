@@ -573,7 +573,7 @@ It check the safe area of that device and then renders the view
        
     KeyExtractor Property:
      -> keyExtractor tells the list to use the ids for the react keys instead of the default key property.
-     
+
      -> By passing extraData={selectedId} to FlatList we make sure FlatList itself will re-render when the state changes. Without setting this prop, FlatList would not know it needs to re-render any items because it is a PureComponent and the prop comparison will not show any changes.
 
      -> Used to extract a unique key for a given item at the specified index. Key is used for caching and as the react key to track item re-ordering. The default extractor checks item.key, then item.id, and then falls back to using the index, like React does.
@@ -601,12 +601,46 @@ It check the safe area of that device and then renders the view
        
        SectionSeparatorComponent : Rendered at the top and bottom of each section (note this is different from ItemSeparatorComponent which is only rendered between items)
 
+       This is a PureComponent which means that it will not re-render if props remain shallow-equal.Make sure that everything your renderItem function depends on is passed as a prop (e.g. extraData) that is not === after updates, otherwise your UI may not update on changes. This includes the data prop and parent component state.
+
        
   57 : Inputs & Forms
 
+       In Web development , we have lots of HTML elements at our disposal to capture user inputs
+       Ex : Inout fields / text areas / dropdowns / checkboxs / radio groups / and many more..
+
+       Core RN Library only provides : Text Input and Swithch
+
+       Expo expands our toolkit , offering additional components like checkbox , date picker through EXPO SDK..
+
+       Forms RN :
+       * Managing Form State
+       * Handling Form Validations
+       * Displaying Validation Messages
+       * Submitting Form Data
+
+
   58 : Text Input 
+  A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad.
+
+  The most basic use case is to plop down a TextInput and 
+  ####
+  subscribe to the onChangeText events to read the user input
+  ####
+
+  {{
+  WIthout proper styles text input wont be visible in screen
+  CMD + Shift + k -> open key borad in IOS
+  }}
+  
+  Note that some props are only available with multiline={true/false}. Additionally, border styles that apply to only one side of the element (e.g., borderBottomColor, borderLeftWidth, etc.) will not be applied if multiline=true. To achieve the same effect, you can wrap your TextInput in a View:
 
   59 : Text Input Props
+  -> placeholder
+  -> securetextentry --> password
+  -> keyboardtype -> email-address /numeric
+  -> autocorrect -> default false....
+  -> 
 
   60 : Multi Line text input
 

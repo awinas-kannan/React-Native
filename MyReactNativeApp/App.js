@@ -41,6 +41,8 @@ import { FlatListComp } from './corecomponents/list/FlatListComp';
 import SectionListComp from './corecomponents/list/SectionListComponent';
 import { FlatListRNDoc } from './corecomponents/list/FlatListRNDoc';
 import FlatListRNStateChangeDoc from './corecomponents/list/FlatListRNStateChangeDoc';
+import TextInputCompInRNDoc from './corecomponents/TextInputCompInDoc';
+import MultiLineTextInputRNDoc from './corecomponents/MultiLineTextInputRNDoc';
 
 export default function App() {
 
@@ -121,7 +123,16 @@ export default function App() {
       // <FlatListComp/>
       // <FlatListRNDoc/>
       // <FlatListRNStateChangeDoc/>
-     <SectionListComp/>
+    //  <SectionListComp/>
+
+     /*
+     * Inputs * Forms
+     */
+
+     <TextInputCompInRNDoc/>
+    // <MultiLineTextInputRNDoc></MultiLineTextInputRNDoc>
+
+
 
   );
 };
