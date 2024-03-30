@@ -648,7 +648,26 @@ It check the safe area of that device and then renders the view
     -> Center in Android  (To Resolve this 
     add textAlignVertical : "top")
     -> Top in IOS
-    
+
+  61 : Swith
+  
+  62 : Login Form
+
+  63 : KeyboardAvoidView
+
+  64 : Form Validation
+
+  65 : Form Submission
+
+  66 : Networking
+
+  67 : GET Requests
+
+  68 : Loading State
+
+  69 : Pull To Refresh
+
+  70 : POST Request  
 
 
 
