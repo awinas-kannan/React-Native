@@ -43,6 +43,7 @@ import { FlatListRNDoc } from './corecomponents/list/FlatListRNDoc';
 import FlatListRNStateChangeDoc from './corecomponents/list/FlatListRNStateChangeDoc';
 import TextInputCompInRNDoc from './corecomponents/TextInputCompInDoc';
 import MultiLineTextInputRNDoc from './corecomponents/MultiLineTextInputRNDoc';
+import SwitchComponentDoc from './corecomponents/SwitchComponentDoc';
 
 export default function App() {
 
@@ -130,7 +131,8 @@ export default function App() {
      */
 
     //  <TextInputCompInRNDoc/>
-    <MultiLineTextInputRNDoc></MultiLineTextInputRNDoc>
+    // <MultiLineTextInputRNDoc></MultiLineTextInputRNDoc>
+    <SwitchComponentDoc></SwitchComponentDoc>
 
 
 

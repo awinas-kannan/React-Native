@@ -651,6 +651,10 @@ It check the safe area of that device and then renders the view
 
   61 : Swith
   
+  This is a controlled component that requires an onValueChange callback that updates the value prop in order for the component to reflect user actions. If the value prop is not updated, the component will continue to render the supplied value prop instead of the expected result of any user actions.
+
+
+
   62 : Login Form
 
   63 : KeyboardAvoidView
