@@ -38,6 +38,7 @@ import { MultipleStyles } from './styles/MultipleStyles';
 import { StyleInheritance } from './styles/StyleInheritance';
 import RenderListUsingScrollViewAndMap from './corecomponents/list/RenderListUsingViewAndMap';
 import { FlatListComp } from './corecomponents/list/FlatListComp';
+import SectionListComp from './corecomponents/list/SectionListComponent';
 
 export default function App() {
 
@@ -115,9 +116,8 @@ export default function App() {
     * Lists
     */
     // <RenderListUsingScrollViewAndMap />
-    
-      <FlatListComp/>
-    
+      // <FlatListComp/>
+     <SectionListComp/>
 
   );
 };

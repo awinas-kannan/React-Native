@@ -593,9 +593,12 @@ It check the safe area of that device and then renders the view
   55 : List Header & Footer
        ListHeaderComponent : Rendered at the top of all the items
        ListFooterComponent : Rendered at the bottom of all the items
-       
-  56 : Section List
 
+  56 : Section List
+       
+       SectionSeparatorComponent : Rendered at the top and bottom of each section (note this is different from ItemSeparatorComponent which is only rendered between items)
+
+       
   57 : Inputs & Forms
 
   58 : Text Input 
