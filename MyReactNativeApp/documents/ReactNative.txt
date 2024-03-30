@@ -544,8 +544,53 @@ It check the safe area of that device and then renders the view
 
   Pro tip: Configure your Web bundler to ignore .native.js extensions in order to avoid having unused code in your production bundle, thus reducing the final bundle size.
 
- 45 - 60 :
+ 45 - 50 :
   -> Pokemon cards
+
+  << Section 7 >
+  51 : List
+
+  rendering list is an essential aspect of mobile application developemnet. Whether its list of comtacts , 
+  
+  map method is used to render list..
+
+  **** Key prop is essentional for react to effectianl to update the list . It helps react identify which item is modified..
+
+  Rendegin List with scroll view & Map is not the preferred technique...
+
+   Disadvantage :
+    -> UI renders all the 100 items even if they are not there in. UI View.. 
+    -> Check console.log
+
+  52 : Flat List
+
+   -> Reneders only the items currently in the view. making it highly performant for long lists..
+   -> Mandatory props :
+      -> data -> array of data
+      -> renderitem -> is a fucntion that return jsx for each item in list
+
+    -> Check the console logs for lazy loading..
+       
+    KeyExtractor Property:
+     -> keyExtractor tells the list to use the ids for the react keys instead of the default key property.
+     -> Used to extract a unique key for a given item at the specified index. Key is used for caching and as the react key to track item re-ordering. The default extractor checks item.key, then item.id, and then falls back to using the index, like React does.
+
+  53 : Item Seperator
+       ItemSeparatorComponent: Rendered in between each item, but not at the top or bottom. 
+       
+  54 : List Empty 
+
+  55 : List Header & Footer
+
+  56 : Section List
+
+  57 : Inputs & Forms
+
+  58 : Text Input 
+
+  59 : Text Input Props
+
+  60 : Multi Line text input
 
 
 

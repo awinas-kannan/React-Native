@@ -1,4 +1,4 @@
-import { Alert } from 'react-native';
+import { Alert, StatusBar } from 'react-native';
 import { ActivityIndicatorRN } from './corecomponents/ActivityIndicatorComponent';
 import { AlertAPIComponent } from './corecomponents/AlertComponent';
 import { ButtonRN } from './corecomponents/ButtonComponent';
@@ -36,6 +36,8 @@ import { BoxShadowRN } from './styles/BoxShadow';
 import FlexDimensionsBasics, { FixedDimensionsBasics, PercentageDimensionsBasics } from './styles/HeightAndWidthStyle';
 import { MultipleStyles } from './styles/MultipleStyles';
 import { StyleInheritance } from './styles/StyleInheritance';
+import RenderListUsingScrollViewAndMap from './corecomponents/list/RenderListUsingViewAndMap';
+import { FlatListComp } from './corecomponents/list/FlatListComp';
 
 export default function App() {
 
@@ -107,7 +109,13 @@ export default function App() {
 
     // <PlatformSafeAreaViewComp/>
     // <PlatformSafeAreaViewComp_2></PlatformSafeAreaViewComp_2>
-    <PlatformButton title = 'Platform Button' onPress = {() => Alert.alert('Pressed')}></PlatformButton>
+    // <PlatformButton title = 'Platform Button' onPress = {() => Alert.alert('Pressed')}></PlatformButton>
+
+    /*
+    * Lists
+    */
+    // <RenderListUsingScrollViewAndMap />
+    <FlatListComp/>
 
   );
 };
