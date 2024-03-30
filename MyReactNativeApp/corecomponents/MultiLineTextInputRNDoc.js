@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TextInput, StatusBar } from 'react-native';
 
 const MultiLineTextInputRNDoc = () => {
-    const [value, onChangeText] = React.useState('Useless Multiline Placeholder');
+    const [value, onChangeText] = React.useState('');
 
     // If you type something in the text box that is a color, the background will change to that
     // color.
@@ -14,7 +14,7 @@ const MultiLineTextInputRNDoc = () => {
         }}>
             <View
                 style={{
-                    backgroundColor: 'i',
+                    backgroundColor: 'ivory',
                     borderBottomColor: 'red',
                     borderBottomWidth: 4,
                 }}>
@@ -26,8 +26,13 @@ const MultiLineTextInputRNDoc = () => {
                     onChangeText={text => onChangeText(text)}
                     // onChangeText={onChangeText}
                     value={value}
-                    style={{ padding: 10 }}
-                    
+                    style={
+                        {
+                            padding: 10,
+                            minHeight: 50,
+                            textAlignVertical : 'top'
+                        }}
+
                 />
             </View>
         </View>

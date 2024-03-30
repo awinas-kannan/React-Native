@@ -640,9 +640,15 @@ It check the safe area of that device and then renders the view
   -> securetextentry --> password
   -> keyboardtype -> email-address /numeric
   -> autocorrect -> default false....
-  -> 
+  -> autoCapitalize ->
 
   60 : Multi Line text input
+
+  MUlti Line Focus :
+    -> Center in Android  (To Resolve this 
+    add textAlignVertical : "top")
+    -> Top in IOS
+    
 
 
 

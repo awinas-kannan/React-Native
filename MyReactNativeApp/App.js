@@ -129,8 +129,8 @@ export default function App() {
      * Inputs * Forms
      */
 
-     <TextInputCompInRNDoc/>
-    // <MultiLineTextInputRNDoc></MultiLineTextInputRNDoc>
+    //  <TextInputCompInRNDoc/>
+    <MultiLineTextInputRNDoc></MultiLineTextInputRNDoc>
 
 
 
