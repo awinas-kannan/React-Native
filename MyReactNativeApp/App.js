@@ -40,6 +40,7 @@ import RenderListUsingScrollViewAndMap from './corecomponents/list/RenderListUsi
 import { FlatListComp } from './corecomponents/list/FlatListComp';
 import SectionListComp from './corecomponents/list/SectionListComponent';
 import { FlatListRNDoc } from './corecomponents/list/FlatListRNDoc';
+import FlatListRNStateChangeDoc from './corecomponents/list/FlatListRNStateChangeDoc';
 
 export default function App() {
 
@@ -118,8 +119,9 @@ export default function App() {
     */
     // <RenderListUsingScrollViewAndMap />
       // <FlatListComp/>
-      <FlatListRNDoc/>
-    //  <SectionListComp/>
+      // <FlatListRNDoc/>
+      // <FlatListRNStateChangeDoc/>
+     <SectionListComp/>
 
   );
 };

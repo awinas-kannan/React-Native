@@ -36,7 +36,14 @@ export const FlatListRNDoc = () => {
         <SafeAreaView style={styles.container}>
             <FlatList
                 data={DATA}
-                renderItem={({ item }) => <Item title={item.title} />}
+                // renderItem={({ item }) => <Item title={item.title} />}
+
+                renderItem={({ item }) => {
+                    return (
+                        <Item title={item.title} />
+                    );
+                }}
+
                 keyExtractor={item => item.id}
             />
         </SafeAreaView>

@@ -13,6 +13,10 @@ export default function SectionListComp() {
         <SafeAreaView style={styles.container}>
             <View style={styles.scrollView}>
                 <SectionList sections={groupedPokemonList}
+                    keyExtractor={(item, index) => {
+                        console.log({ item, index })
+                        item + index
+                    }}
                     renderItem={({ item }) => {
                         return (
                             <View style={styles.card}>
@@ -34,7 +38,7 @@ export default function SectionListComp() {
                         <View
                             style={{
                                 height: 16,
-                                backgroundColor : 'plum'
+                                backgroundColor: 'plum'
                             }}
                         />
                     )}

@@ -562,7 +562,7 @@ It check the safe area of that device and then renders the view
     -> UI renders all the 100 items even if they are not there in. UI View.. 
     -> Check console.log
 
-  52 : Flat List
+  52 : Flat List : https://reactnative.dev/docs/flatlist
 
    -> Reneders only the items currently in the view. making it highly performant for long lists..
    -> Mandatory props :
@@ -573,6 +573,9 @@ It check the safe area of that device and then renders the view
        
     KeyExtractor Property:
      -> keyExtractor tells the list to use the ids for the react keys instead of the default key property.
+     
+     -> By passing extraData={selectedId} to FlatList we make sure FlatList itself will re-render when the state changes. Without setting this prop, FlatList would not know it needs to re-render any items because it is a PureComponent and the prop comparison will not show any changes.
+
      -> Used to extract a unique key for a given item at the specified index. Key is used for caching and as the react key to track item re-ordering. The default extractor checks item.key, then item.id, and then falls back to using the index, like React does.
 
   53 : Item Seperator
