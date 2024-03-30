@@ -1,4 +1,4 @@
-import { Alert, StatusBar } from 'react-native';
+import { Alert, StatusBar, View } from 'react-native';
 import { ActivityIndicatorRN } from './corecomponents/ActivityIndicatorComponent';
 import { AlertAPIComponent } from './corecomponents/AlertComponent';
 import { ButtonRN } from './corecomponents/ButtonComponent';
@@ -115,7 +115,9 @@ export default function App() {
     * Lists
     */
     // <RenderListUsingScrollViewAndMap />
-    <FlatListComp/>
+    
+      <FlatListComp/>
+    
 
   );
 };

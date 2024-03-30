@@ -5,16 +5,17 @@ import {
     SafeAreaView,
     StatusBar,
     FlatList,
+    SafeAreaViewBase,
 } from "react-native";
 import pokemonList from "./data.json";
 
 export function FlatListComp() {
 
     return (
-        <SafeAreaView styles={styles.container}>
-            <View styles={styles.hPadd}>
+        <SafeAreaView style={styles.container}>
                 <FlatList
                     data={pokemonList}
+                    // data={[]}
                     renderItem={({ item }) => {
                         console.log(item.id);
                         return (
@@ -32,8 +33,14 @@ export function FlatListComp() {
                             }}
                         />
                     }
+                    ListEmptyComponent={<Text>No Items Found</Text>}
+                    ListHeaderComponent={
+                        <Text style={styles.headerText}>Pokemon List</Text>
+                    }
+                    ListFooterComponent={
+                        <Text style={styles.footerText}>End of list</Text>
+                    }
                 />
-            </View>
         </SafeAreaView>
     );
 };
@@ -52,14 +59,29 @@ const styles = StyleSheet.create({
         padding: 100
     },
     card: {
-        backgroundColor: "plum",
+        backgroundColor: "lightgreen",
         padding: 16, // Spacing Within the card
         borderRadius: 8,
-        marginBottom: 16, // Spacing B/w the cards
+        // marginBottom: 16, // Spacing B/w the cards
         borderWidth: 2,
         marginHorizontal: 10
     },
     cardText: {
         fontSize: 30,
-    }
+    },
+    headerText: {
+        fontSize: 24,
+        textAlign: "center",
+        marginBottom: 12,
+    },
+    footerText: {
+        fontSize: 24,
+        textAlign: "center",
+        marginTop: 12,
+    },
+    sectionHeaderText: {
+        backgroundColor: "#FFFFFF",
+        fontSize: 24,
+        fontWeight: "bold",
+    },
 });
