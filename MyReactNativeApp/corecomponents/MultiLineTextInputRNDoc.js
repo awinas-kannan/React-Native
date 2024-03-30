@@ -21,7 +21,7 @@ const MultiLineTextInputRNDoc = () => {
                 <TextInput
                     editable
                     multiline
-                    numberOfLines={10}
+                    // numberOfLines={10}
                     maxLength={400}
                     onChangeText={text => onChangeText(text)}
                     // onChangeText={onChangeText}
@@ -29,7 +29,7 @@ const MultiLineTextInputRNDoc = () => {
                     style={
                         {
                             padding: 10,
-                            minHeight: 50,
+                            minHeight: 100,
                             textAlignVertical : 'top'
                         }}
 
