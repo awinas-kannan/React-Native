@@ -728,7 +728,10 @@ It check the safe area of that device and then renders the view
   Section 10 :
   72 : Navigation
 
-  Soln : React Navigation Library
+  
+  Soln : React Navigation Library 
+  https://reactnative.dev/docs/navigation#react-navigation
+  https://reactnavigation.org/docs/getting-started
 
   Mobile apps are rarely made up of a single screen. Managing the presentation of, and transition between, multiple screens is typically handled by what is known as a navigator.
   
@@ -736,8 +739,14 @@ It check the safe area of that device and then renders the view
   * Stack
   * Drawer
   * Tab Navigator
-  
 
+  Stack Navigator: Provides a stack-based navigation model, where screens are stacked on top of each other.
+  
+  Tab Navigator: Displays tabs at the bottom (or top) of the screen, allowing users to switch between different screens or tabs.
+  
+  Drawer Navigator: Creates a side menu that can be opened by swiping from the left (or right) side of the screen.
+ 
+  Switch Navigator: Renders only one screen at a time and is useful for authentication flows.
 
 
 
