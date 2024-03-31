@@ -44,6 +44,7 @@ import FlatListRNStateChangeDoc from './corecomponents/list/FlatListRNStateChang
 import TextInputCompInRNDoc from './corecomponents/TextInputCompInDoc';
 import MultiLineTextInputRNDoc from './corecomponents/MultiLineTextInputRNDoc';
 import SwitchComponentDoc from './corecomponents/SwitchComponentDoc';
+import LoginForm from './LoginForm';
 
 export default function App() {
 
@@ -132,7 +133,9 @@ export default function App() {
 
     //  <TextInputCompInRNDoc/>
     // <MultiLineTextInputRNDoc></MultiLineTextInputRNDoc>
-    <SwitchComponentDoc></SwitchComponentDoc>
+    // <SwitchComponentDoc></SwitchComponentDoc>
+
+    <LoginForm/>
 
 
 

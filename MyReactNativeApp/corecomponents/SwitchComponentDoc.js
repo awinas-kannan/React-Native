@@ -13,12 +13,12 @@ const SwitchComponentDoc = () => {
 
 
     return (
-        
+
         <View style={styles.container}>
             <Switch
                 trackColor={{ false: 'red', true: 'blue' }}
                 thumbColor={isEnabled ? 'white' : 'black'}
-                ios_backgroundColor="#3e3e3e"
+                ios_backgroundColor="green"
                 onValueChange={toggleSwitch}
                 value={isEnabled}
             />
