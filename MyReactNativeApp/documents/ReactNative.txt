@@ -850,10 +850,48 @@ It check the safe area of that device and then renders the view
 
    -> useLayoutEffect
 
+       const { name } = route.params;
+    
+    useLayoutEffect(() => {
+        navigation.setOptions({
+            title: name,
+        });
+    }, [navigation, name]);
 
   78 : Drawer Navigation
 
+  It introduces a hidden menu, sliding from either side of screen
+  Its beneficial in apps with multiple main secitons that require a neat and organized navigation structure..
+
+  npm install @react-navigation/drawer
+  npx expo install react-native-gesture-handler react-native-reanimated
+   plugins: [
+      ...
+      'react-native-reanimated/plugin',
+    ],
+
+   npm start -- --reset-cache
+   or
+   "start": "expo start -c",
+
+   we can also use button to open drawer
+   -> navigation.toggleDrawer();
+   
+   Move to Other Screen
+    -> navigaiton.jumpTo("<Screen name")
+
+    -> Check teh drawer.. it will be active..
+   
   79 : Drawer navigation options
+
+            options={{
+            title: "My dashboard",
+            drawerLabel: "Dashboard label",
+            drawerActiveTintColor: "#333",
+            drawerActiveBackgroundColor: "lightblue",
+            drawerContentStyle: {
+              backgroundColor: "#c6cbef",
+            },
 
   80 : Tab Navigation
 
