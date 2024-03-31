@@ -48,6 +48,7 @@ function SettingsScreen({ navigation }) {
 
 const Stack = createNativeStackNavigator();
 
+//https://reactnavigation.org/docs/native-stack-navigator
 export function MyStackFromDoc() {
     return (
         <Stack.Navigator>

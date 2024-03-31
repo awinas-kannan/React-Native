@@ -801,7 +801,40 @@ It check the safe area of that device and then renders the view
 
   75 : Passing Data b/w screens
 
+  route -> this prop is provided to all screen compoennets
+        -> we can access the params sent from prev screen using this. (route.params)
+  
+  We can also sent some default values
+   -> use initalParams in the Stack.Screen
+   -> If no data is sent from prev to next screen.. this default value set at the screen level will be used
+
+
+  useLayoutEffect();
+
+
   76 : Stack Navigation options
+  
+  options={{
+          title: 'Welcome Home !!!',
+          headerStyle: {
+            backgroundColor: 'green'
+          },
+          headerTintColor: 'white',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            fontSize: 14
+          },
+          headerRight: () => (
+            <Pressable onPress={() => { Alert.alert('Menu Clicked') }}>
+              <Text style={{ fontSize: 16, color: 'white' }}> Menu </Text>
+            </Pressable>
+          ),
+          contentStyle: {
+            backgroundColor: "lightgreen"
+          }
+
+  To Use this options across all screens ,use screenoptions
+
 
   77 : Dynamic Stack Navigation Options
 
