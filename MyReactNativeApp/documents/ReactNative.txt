@@ -758,12 +758,45 @@ It check the safe area of that device and then renders the view
   npm install @react-navigation/native
   
   npx expo install react-native-screens react-native-safe-area-context
-
-
+  
+  Now, we need to wrap the whole app in NavigationContainer. Usually you'd do this in your entry file, such as index.js or App.js:
 
   73 : Stack navigation
 
+  Stack Navigator vs Native Stack navigator
+
+  Stack Navigator in React Navigation:
+
+  React Navigation's Stack Navigator is a JavaScript-based navigation solution provided by the React Navigation library.
+  
+  It implements a stack-based navigation model, where screens are stacked on top of each other.
+  
+  Each time you navigate to a new screen, it is pushed onto the stack, and going back removes the top screen from the stack (popping).
+  
+  React Navigation's Stack Navigator is a cross-platform solution and does not rely on native platform navigation components.
+
+  Native Navigation Components:
+
+  On the other hand, native stack navigators refer to the built-in navigation components provided by the native platform (e.g., UINavigationController on iOS and FragmentManager on Android).
+  
+  These native navigation components are part of the iOS and Android SDKs and are used to manage navigation within native apps.
+  
+  React Native itself provides a way to interact with native navigation components through native modules and bridges, allowing you to integrate native navigation components into your React Native app if needed.
+
+
+  We are going to look as Native navigator as high level customozation is not required currenlty
+
+  https://reactnavigation.org/docs/native-stack-navigator
+
+  npm install @react-navigation/native-stack
+  
+
   74 : Navigation b/w Screens
+  1) Navigation Prop
+  2) Navigation Hook
+
+   Navigation Prop vs Navigation Hook
+   
 
   75 : Passing Data b/w screens
 
