@@ -724,7 +724,22 @@ It check the safe area of that device and then renders the view
 
   In Andorid , Local Host will not work.. use computer ip address..
 
+
+  Section 10 :
   72 : Navigation
+
+  Soln : React Navigation Library
+
+  Mobile apps are rarely made up of a single screen. Managing the presentation of, and transition between, multiple screens is typically handled by what is known as a navigator.
+  
+  React Navigation provides a variety of navigators lie 
+  * Stack
+  * Drawer
+  * Tab Navigator
+  
+
+
+
 
   73 : Stack navigation
 
