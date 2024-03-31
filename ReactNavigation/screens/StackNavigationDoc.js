@@ -48,7 +48,7 @@ function SettingsScreen({ navigation }) {
 
 const Stack = createNativeStackNavigator();
 
-export function MyStack() {
+export function MyStackFromDoc() {
     return (
         <Stack.Navigator>
             <Stack.Screen name="Home" component={HomeScreen} />
