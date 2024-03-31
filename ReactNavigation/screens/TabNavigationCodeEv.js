@@ -3,6 +3,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import CourseListTabCodeEv from "./CourseListTabCodeEv"
 import ProfileTabCodeEv from "./ProfileTabCodeEv"
 import SettingsScreenCodeEv from "./SettingsScreenCodeEv"
+import { StackNavigationCodeEv } from "./StackNavigationCodeEv";
 
 const Tab = createBottomTabNavigator();
 
@@ -25,13 +26,19 @@ export const TabNavigationCodeEv = () => {
                 component={ProfileTabCodeEv}
                 options={{
                     tabBarLabel: "My Profile",
-                    tabBarIcon: ({color}) => <Ionicons name={"person"} size={20}  color={color}/>,
+                    tabBarIcon: ({ color }) => <Ionicons name={"person"} size={20} color={color} />,
                     tabBarBadge: 99,
                 }}
             />
             <Tab.Screen name="Settings" component={SettingsScreenCodeEv}
                 options={{
                     tabBarIcon: () => <Ionicons name={"settings"} size={20} />,
+                }} />
+
+            <Tab.Screen name="Stack" component={StackNavigationCodeEv}
+                options={{
+                    tabBarIcon: () => <Ionicons name={"star"} size={20} />,
+                    headerShown: false
                 }} />
         </Tab.Navigator>
     )

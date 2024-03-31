@@ -896,11 +896,10 @@ It check the safe area of that device and then renders the view
   80 : Tab Navigation
 
   https://reactnavigation.org/docs/bottom-tab-navigator
-  
+
   Switch b/w differnet tabs by tapping on a tab usually displayed at bottom of screen
 
   npm install @react-navigation/bottom-tabs
-
 
 
   81 : Tab Navigation Options
@@ -913,6 +912,12 @@ It check the safe area of that device and then renders the view
 
 
   82 : Nesting Navigations
+
+  Nesting navigators allows us to combine powers of diff types if navigators , creating seamless and organized user experience
+
+  Ex : Stack navigator Within Tab navigator
+
+  headerShown: false -> To show stack header and hide the tab header
 
 
 ###########################################################################   Javascript ####################################################

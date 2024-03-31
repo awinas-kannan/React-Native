@@ -15,6 +15,8 @@ export default function App() {
       {/* <DrawerNavigationCodeEv/> */}
       <TabNavigationCodeEv/>
 
+      {/* Added Stack Inside Tab */}
+  
     </NavigationContainer>
   );
 }
