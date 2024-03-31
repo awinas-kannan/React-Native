@@ -685,6 +685,12 @@ It check the safe area of that device and then renders the view
   66 : Networking
 
   https://reactnative.dev/docs/network
+  https://developer.mozilla.org/en-US/docs/Web/API/Request
+
+  Many mobile apps need to load resources from a remote URL. You may want to make a POST request to a REST API, or you may need to fetch a chunk of static content from another server.
+
+
+  
   
   * Fetching and submitting data to an api
   * Loading states
@@ -693,6 +699,8 @@ It check the safe area of that device and then renders the view
 
   Sample APIS:
   https://jsonplaceholder.typicode.com/
+
+  Known Issues with fetch and cookie based authentication
 
   67 : GET Requests
   
@@ -739,6 +747,32 @@ It check the safe area of that device and then renders the view
   82 : Nesting Navigations
 
 
+###########################################################################   Javascript ####################################################
+
+Promise : 
+
+A Promise is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value. A Promise can be in one of three states: pending, fulfilled, or rejected.
+
+Pending: Initial state, neither fulfilled nor rejected.
+Fulfilled: The operation completed successfully, and the promise has a value.
+Rejected: The operation failed, and the promise has a reason for the failure.
+Promises have two important methods:
+
+then(): Allows you to specify what to do when a promise is resolved (fulfilled) or rejected.
+catch(): Allows you to specify what to do when a promise is rejected.
+
+
+Async - Await:
+
+async: The async keyword is used to declare an asynchronous function. It ensures that the function returns a promise.
+
+
+await: The await keyword is used inside an async function to wait for the completion of a promise. It can only be used inside async functions.
+
+await myPromise waits for the myPromise to be resolved or rejected. If it resolves, the value is stored in the result variable, and the code continues execution. If it rejects, an error is thrown, and it's caught by the catch block.
+
+
+Read : Js Top networking libraries with get post put delete exampels In Chat GPT
 
 
 
