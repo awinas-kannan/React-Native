@@ -86,10 +86,10 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         paddingHorizontal: 20,
-        backgroundColor: "#f5f5f5",
+        backgroundColor: "lightyellow",
     },
     form: {
-        backgroundColor: "#ffffff",
+        backgroundColor: "white",
         padding: 20,
         borderRadius: 10,
         shadowColor: "#000",
