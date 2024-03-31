@@ -12,12 +12,19 @@ import {
 } from "react-native";
 
 const NetworkingGetPostErrorHandling = () => {
+
+    //GET 
     const [postList, setPostList] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [refreshing, setRefreshing] = useState(false);
+
+    //POST
     const [postTitle, setPostTitle] = useState("");
     const [postBody, setPostBody] = useState("");
     const [isPosting, setIsPosting] = useState(false);
+
+    //ERROR
+    
     const [error, setError] = useState("");
 
     const fetchData = async (limit = 10) => {
@@ -30,7 +37,7 @@ const NetworkingGetPostErrorHandling = () => {
 
             setTimeout(() => {
                 setIsLoading(false);
-            }, 5000)
+            }, 2000)
 
             setError("");
         } catch (error) {
@@ -72,9 +79,9 @@ const NetworkingGetPostErrorHandling = () => {
         fetchData();
     }, []);
 
-    const handleRefresh = () => {
+    const handleRefresh = async () => {
         setRefreshing(true);
-        postList.length
+        console.log('Refreshing' , {refreshing})
         fetchData(postList.length + 10);
         setRefreshing(false);
     };
@@ -83,7 +90,7 @@ const NetworkingGetPostErrorHandling = () => {
     if (isLoading) {
         return (
             <SafeAreaView style={styles.loadingContainer}>
-                <ActivityIndicator size="large" color="#0000ff" />
+                <ActivityIndicator size="large" color="red" />
                 <Text>Loading...</Text>
             </SafeAreaView>
         );
