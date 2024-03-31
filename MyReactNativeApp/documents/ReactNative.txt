@@ -748,6 +748,17 @@ It check the safe area of that device and then renders the view
  
   Switch Navigator: Renders only one screen at a time and is useful for authentication flows.
 
+  Create new project
+  npx create-expo-app@latest ReactNavigation
+
+  cd ReactNavigation
+
+  https://reactnavigation.org/docs/getting-started
+ 
+  npm install @react-navigation/native
+  
+  npx expo install react-native-screens react-native-safe-area-context
+
 
 
   73 : Stack navigation
