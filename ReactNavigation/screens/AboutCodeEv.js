@@ -3,10 +3,10 @@ import { View, Text, Button, StyleSheet } from "react-native";
 
 export default function AboutScreen({ navigation, route }) {
     const { name } = route.params;
-    
+
     useLayoutEffect(() => {
         navigation.setOptions({
-            title: name,
+            title: name + ' - useLayoutEffect',
         });
     }, [navigation, name]);
 
