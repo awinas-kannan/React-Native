@@ -795,8 +795,9 @@ It check the safe area of that device and then renders the view
   1) Navigation Prop
   2) Navigation Hook
 
-   Navigation Prop vs Navigation Hook
-   
+   Navigation Prop vs Navigation Hook (Check Chat GPT)
+
+  In summary, both the Navigation Prop and Navigation Hook provide a way to access navigation functionality within components. The Navigation Prop is typically used in class components and functional components that receive props, while the Navigation Hook is specifically designed for functional components and provides a more concise way to access navigation functionality without the need for props. Choose the method that best fits your component's requirements and coding style.
 
   75 : Passing Data b/w screens
 
