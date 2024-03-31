@@ -833,10 +833,23 @@ It check the safe area of that device and then renders the view
             backgroundColor: "lightgreen"
           }
 
-  To Use this options across all screens ,use screenoptions
-
+  To Use this options across all screens ,use screenoptions in
+  <Stack.Navigator>
 
   77 : Dynamic Stack Navigation Options
+   
+   Instead of static title for Screen,we might want to have a dynamic one..
+   Ex: Hello + {NAME}
+   
+   -> Using Options
+
+           options={({ route }) => ({
+            title: route.params.name
+          })}
+
+
+   -> useLayoutEffect
+
 
   78 : Drawer Navigation
 
