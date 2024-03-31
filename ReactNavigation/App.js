@@ -2,6 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { StackNavigationDoc } from './screens/StackNavigationDoc';
 import { StackNavigationCodeEv } from './screens/StackNavigationCodeEv';
 import { DrawerNavigationCodeEv } from './screens/DrawerNavigationCodeEv';
+import { TabNavigationCodeEv } from './screens/TabNavigationCodeEv';
 
 export default function App() {
 
@@ -11,8 +12,9 @@ export default function App() {
       {/* <StackNavigationCodeEv></StackNavigationCodeEv> */}
       {/* <StackNavigationDoc></StackNavigationDoc> */}
       
-      <DrawerNavigationCodeEv/>
-      
+      {/* <DrawerNavigationCodeEv/> */}
+      <TabNavigationCodeEv/>
+
     </NavigationContainer>
   );
 }

@@ -895,7 +895,22 @@ It check the safe area of that device and then renders the view
 
   80 : Tab Navigation
 
+  https://reactnavigation.org/docs/bottom-tab-navigator
+  
+  Switch b/w differnet tabs by tapping on a tab usually displayed at bottom of screen
+
+  npm install @react-navigation/bottom-tabs
+
+
+
   81 : Tab Navigation Options
+
+    screenOptions={{
+                //   tabBarShowLabel: false,
+                tabBarLabelPosition: "below-icon",
+                tabBarActiveTintColor: "red",
+            }}
+
 
   82 : Nesting Navigations
 
