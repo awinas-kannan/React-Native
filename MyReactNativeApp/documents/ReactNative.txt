@@ -656,24 +656,54 @@ It check the safe area of that device and then renders the view
   Thumb Color -> Color of the toggle circle
   Track Color -> Color of the horizontal Area
   
-  
-
-
   62 : Login Form
+
+  LoginForm.js
 
   63 : KeyboardAvoidView
 
+  https://reactnative.dev/docs/keyboardavoidingview
+
+  This component will automatically adjust its height, position, or bottom padding based on the keyboard height to remain visible while the virtual keyboard is displayed.
+  
+
+  behavior:
+  Android and iOS both interact with this prop differently. On both iOS and Android, setting behavior is recommended.
+
+  keyboardVerticalOffset
+  This is the distance between the top of the user screen and the react native view, may be non-zero in some use cases.
+
   64 : Form Validation
+   
+  LoginForm.js
 
   65 : Form Submission
+  
+  LoginForm.js
 
+  Section 9:
   66 : Networking
+
+  https://reactnative.dev/docs/network
+  
+  * Fetching and submitting data to an api
+  * Loading states
+  * Error Handling
+  * Flat List component to display our data
+
+  Sample APIS:
+  https://jsonplaceholder.typicode.com/
 
   67 : GET Requests
 
   68 : Loading State
-
+   
+  isLoading -> When data is fetchied for first time
+  
   69 : Pull To Refresh
+
+  When a list is pulled down, a default loading spinner will be displayed..
+
 
   70 : POST Request  
 

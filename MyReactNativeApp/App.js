@@ -45,6 +45,8 @@ import TextInputCompInRNDoc from './corecomponents/TextInputCompInDoc';
 import MultiLineTextInputRNDoc from './corecomponents/MultiLineTextInputRNDoc';
 import SwitchComponentDoc from './corecomponents/SwitchComponentDoc';
 import LoginForm from './LoginForm';
+import KeyboardAvoidingComponent from './corecomponents/KeyboardAvoidingViewComp';
+import NetworkingGetPostErrorHandling from './networking/NetworkingGetPostErrorHandling';
 
 export default function App() {
 
@@ -135,9 +137,14 @@ export default function App() {
     // <MultiLineTextInputRNDoc></MultiLineTextInputRNDoc>
     // <SwitchComponentDoc></SwitchComponentDoc>
 
-    <LoginForm/>
+    // <LoginForm/>
+    // <KeyboardAvoidingComponent/>
 
+    /*
+    * Networking
+    */
 
+    <NetworkingGetPostErrorHandling/>
 
   );
 };
