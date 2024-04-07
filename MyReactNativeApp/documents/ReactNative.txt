@@ -1144,8 +1144,18 @@ JS APP -> Dispatches action to REDUCER whihc will update the state and returns a
  asyncActions.js
   
  13 : Redux Thunk Middleware
+ 
+  throw new Error(process.env.NODE_ENV === "production" ? formatProdErrorMessage(7) : `Actions must be plain objects. Instead, the actual type was: '${kindOf(action)}'. You may need to add middleware to your store setup to handle dispatching other values, such as 'redux-thunk' to handle dispatching functions. See https://redux.js.org/tutorials/fundamentals/part-4-store#middleware and https://redux.js.org/tutorials/fundamentals/part-6-async-logic#using-the-redux-thunk-middleware for examples.`);
 
+ Axios :
+  -> Request to an api end point
 
+ Redux - Thunk :
+  -> DEfine async action creations 
+
+ npm install axios redux-thunk
+ npm install redux-thunk
+  
   
 
 
