@@ -1153,17 +1153,15 @@ JS APP -> Dispatches action to REDUCER whihc will update the state and returns a
  Redux - Thunk :
   -> DEfine async action creations 
 
+  -> Action Creator can return function instead of action Object
+
  npm install axios redux-thunk
  npm install redux-thunk
   
-  
-
-
-
-
-
-
-
+ dispatch() requires a plain action object. Our action creators normally return just that. A plain object.
+ Redux-thunk allows us to use a function in our dispatch. The middleware can discern between an object and a function. If it is a function returned from our action creator, that return function is invoked and it is passed the dispatch function from the store as an argument. This way, we have dispatch available to us right in our object creator. We’re still dispatching plain objects to our reducers at the end of it all, we’re just moving the dispatch to the action creator function, so we can introduce those side effects like additional logic, or asynchronous calls.
+ 
+ So I guess in a way we are ‘lifting’ the store.dispatch() method into the action creator function and calling it there. The reducers know no different. They’re still getting plain objects. 
 
 
 
