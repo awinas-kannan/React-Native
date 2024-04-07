@@ -1247,11 +1247,26 @@ export default connect(
 
 
  28 : Async Actions
+ 
+ Sync Actions:
+  -> As soon as actions is dispatched ,the state was immediately updates
+  -> if u dispach BUY_CAKE action, noOfcakes was right away decrements by 1
+  -> Same with BUY_ICE as well
+
+
+ Async Actions:
+  -> Async API calls to fetch data from end point and use that data in your applciation
+  -> make api call wait for resp and dispatch action based on the response
 
  29 :Redux Thunk Get Request
+ UserContainer.js
 
+ Thunk Middleware.. instead of returning an action we return function to dispatch method..
+ 
 
 #######################################################################################################################################################################################################################
+
+
 
 
 

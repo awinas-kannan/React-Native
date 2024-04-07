@@ -7,6 +7,7 @@ import IceCreamContainer from './components/IceCreamContainer';
 import HooksIceCreamContainer from './components/HooksIceCreamContainer';
 import HooksCakeContainer from './components/HooksCakeContainer';
 import ItemContainer from './components/ItemContainer';
+import UserContainer from './components/UserContainer';
 
 
 
@@ -27,6 +28,9 @@ function App() {
         <h1>--------------------------- OWN Props ---------------------------</h1>
         <ItemContainer cake></ItemContainer>
         <ItemContainer ice></ItemContainer>
+
+        <h1>--------------------------- Async Actions ---------------------------</h1>
+        <UserContainer />
       </div>
     </Provider>
   );
