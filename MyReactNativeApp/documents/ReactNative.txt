@@ -1220,11 +1220,31 @@ JS APP -> Dispatches action to REDUCER whihc will update the state and returns a
 
  24 : REdux Devtools Extension
 
+      npm install --save redux-devtools-extension
+
+      // Not Working.
+
  25 : Action payload
+
+      input element in cake container is added
 
  26 : mapStateToProps
 
+      Item Container.js
+
+      ownProps : -> The component has some own props
+
+
  27 : mapDispatchToProps
+
+       If you want to only use dispatch , make the first param as null
+
+
+export default connect(
+    null,
+    mapDispatchToProps
+)(ItemContainer)
+
 
  28 : Async Actions
 
