@@ -1179,11 +1179,23 @@ JS APP -> Dispatches action to REDUCER whihc will update the state and returns a
  17 : Store
 
  To Provide the Store to all the components in application hierarchy
+
  <Proviver store={store}>
- 
- This provide store in a
 
  18 : Connect
+
+ What is selector ?
+  -> Return state information from store
+
+ mapStateToProps -> takes redux state as param and returns object
+
+ mapDispatchToProps -> takes dispatch as param and return object
+
+  *** connect these to functions with react component
+  connects react component to redux store
+
+  what this wil do it,,
+  in addition to the props that CakeComponent is getting,it will also get state & dispatch a props
 
  19 : React Redux with Hooks
 
