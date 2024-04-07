@@ -1,10 +1,8 @@
 const redux = require('redux')
 const thunkMiddleware = require('redux-thunk').thunk
-const reduxLogger = require('redux-logger')
 const axios = require('axios')
 const createStore = redux.createStore
 const applyMiddleware = redux.applyMiddleware
-const logger = reduxLogger.createLogger()
 
 const initialState = {
     loading: false,
@@ -76,6 +74,6 @@ const reducer = (state = initialState, action) => {
     }
 }
 
-const store = createStore(reducer, applyMiddleware(thunkMiddleware,logger))
-store.subscribe(() => { console.log('Printing the state ',store.getState()) })
+const store = createStore(reducer, applyMiddleware(thunkMiddleware))
+store.subscribe(() => { console.log(store.getState()) })
 store.dispatch(fetchUsers())
