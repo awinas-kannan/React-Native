@@ -1202,10 +1202,33 @@ JS APP -> Dispatches action to REDUCER whihc will update the state and returns a
   Subscripbe to Store and dispatch actions without CONNECT()
 
  20 : useSelector Hook
+      
+      mapStateToProps == useSelector
 
  21 : useDispatch Hook
 
- 22: 
+      mapDispatchToProps == useDispatch
+
+ 22 : Cake and Icecreams
+   
+       Implements Ice creaam feature
+
+ 23 : Logger Middleware
+      
+      -> Check the logs in browser console
+      -> 
+
+ 24 : REdux Devtools Extension
+
+ 25 : Action payload
+
+ 26 : mapStateToProps
+
+ 27 : mapDispatchToProps
+
+ 28 : Async Actions
+
+ 29 :Redux Thunk Get Request
 
 
 #######################################################################################################################################################################################################################
