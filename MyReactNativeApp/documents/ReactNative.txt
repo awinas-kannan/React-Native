@@ -1198,6 +1198,8 @@ JS APP -> Dispatches action to REDUCER whihc will update the state and returns a
   in addition to the props that CakeComponent is getting,it will also get state & dispatch a props
 
  19 : React Redux with Hooks
+  
+  Subscripbe to Store and dispatch actions without CONNECT()
 
  20 : useSelector Hook
 
