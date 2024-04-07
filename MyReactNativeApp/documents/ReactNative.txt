@@ -986,8 +986,178 @@ Native CLI :
  ** npx react-native start --experimental-debugger ** 
 
 
-########################################################################################################################################################################################################################
+#######################################################################################################################################################################################################################Code Evolution Redux :
+ 
 
+1 ) React Redux : Introduction 
+
+Redux is a JS library for predictable and maintainable global state management.
+
+Redux is for java script app :
+  -> It can beused with react , angular , vue ,even vanilla js
+  -> Its not tightly coubled with React
+
+Redux is state container:
+ -> It stores the state of app
+ ->   
+
+Redux is predictable :
+ -> The change made to our app is predictable
+
+
+Using useState wil be tough for a huge application
+(Check ppt video)
+
+useContext + useReducer ??
+
+
+React is a library to build UI
+Redux is a state management libraty
+React-Redux is a library that provied binding to use React and Redux together in an application
+
+
+Few points before we proceed :
+ -> Learn React and then Redux
+ -> Redux can be achived with useContext + useReducer hooks but still it cant match the ecosystem
+ -> when should i use redux in my react app ?
+    -> that depends on app . if there are lot of screens that has to share the state... we can use redux
+ ->   
+
+
+2 : Set up projext
+
+  -> Node and Npm installed
+  -> npm init --yes (to initalize an app with default package.json)
+  -> npm install redux
+  -> Create a js file index.js
+  -> write a console.log 
+  -> then run -> node index
+
+3 : Three Core Concepts
+  
+  Cake Shop Scenario :
+     Shop keeper get the action BUY from customer 
+     and then removed a cake from Shelf (Store) 
+
+  -> Store  {Shop} Holds the state of applicaiton
+  -> Action {Want to buy cake}  
+  -> Reducer  {Shop keeper} ties the store and actions together
+
+
+Store  : Holds state of applicaion
+Adtion : Describes changes in state of applicaiton
+Reducer : Carries out the state transition depending on action
+
+ 4: Three Principles
+ 
+ -> The state of whole application is stored in object tree with a single store
+ -> The only way to change the state is to emit action, an object describing what happened
+ -> To specify how the state tree is transformed by actions, write pure reducers
+
+ Reducer - (previousState, action) => newState
+
+ To update the Redux store, the APP has to dispatch an action
+
+JS APP -> Dispatches action to REDUCER whihc will update the state and returns a state -> JS APP
+
+ 5: Actions
+ -> JS object that should have type property
+ -> Action creatr is function that return the actoin
+
+ function buyCake(){
+ return {
+   type : "BUY_CAKE",
+   info : "Buy cake action"
+ }
+ }
+
+ 6 : Reducers
+ 
+ reducer = (state,action) => new State
+ -> we are not mutating the exsting state, we create new one
+
+ 7 : Store
+
+ * One Store for entire application
+ * getState() -> used to get he state from store 
+ * dispatch(action) -> allow state to be updated
+ * registers listners via subscribe(listner)
+ * Handles unregistering of listners via functin returned by subscribe(listner)
+
+ ### simple node import vary with react import
+
+ 8 : Cake and ice creams
+  
+ 2 shop keeper managing cake and icecreams
+ // Single reducer to manage all actions
+
+ 9 : Multiple Reducers
+
+ //// Multiple Reducers to manage individual actions
+
+ 10 : combine Reducers
+ 
+ When an actions is dispatched, both the reducers are recived the actions
+ One Reducers acts on that actios
+ Other ignore it.
+
+ 11 : Middleware
+ -> Extend redux with custom functionality
+ -> Provides 3rd party extentsion point b/w dispatching an actions, then moment it reaches the reducer
+ -> used for loggin, crash reporting , perfirm async taks
+
+ npm install redux-logger
+ 
+ Updated Combined State  { cake: { numOfCakes: 9 }, iceCream: { numOfIceCreams: 20 } }
+ action BUY_CAKE @ 12:48:42.196
+   prev state { cake: { numOfCakes: 10 }, iceCream: { numOfIceCreams: 20 } }
+   action     { type: 'BUY_CAKE', info: 'Buy cake action' }
+   next state { cake: { numOfCakes: 9 }, iceCream: { numOfIceCreams: 20 } }
+
+ 12 : Async Actions
+ 
+ //We have seen sync actions so far..
+
+ state = {
+  loading : true , // used in UI for displaying loading spinner in component
+  data : [] ,
+  error : ''
+ }
+ 
+ Actions :
+
+ FETCH_USERS_REQUEST - Fetch list of users
+ FETCH_USERS_SUCCESS - Fetch Successfullt
+ FETCH_USERS_FAILURE - Error fetching the data
+
+ Reducer :
+ 
+ case : FETCH_USERS_REQUEST
+  -> loading : true
+ case : FETCH_USERS_SUCCESS
+  -> loading : false
+  -> users : data 
+ case :  FETCH_USERS_FAILURE
+   -> loading : false
+   -> set error
+
+ asyncActions.js
+  
+ 13 : Redux Thunk Middleware
+
+
+  
+
+
+
+
+
+
+
+
+
+
+#######################################################################################################################################################################################################################
 
 
 
@@ -1001,8 +1171,20 @@ React Native Check List :
 6) Fontsetup
 7) Splash Screen setup (Later)
 
+React Native Application :
+ -> Create a new application
+ -> What are inital setup should be done ?
+
+
 Pfed Onboarding Request.. Dev onboarding...
 Tc(Touch Computer) - 52 72 ..
 
+
+-- Shoaib :
+
+-> Get Boiler plate code
+-> Update SSP
+-> Do we have camera aceess / walmart libraries
+-> 
 
 
