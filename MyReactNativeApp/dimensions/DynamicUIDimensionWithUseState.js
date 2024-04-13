@@ -14,6 +14,8 @@ export function DynamicUIDimensionAPIUseState() {
     // }
     // useEffect(DimensionOnChangeEvent);
 
+    //When will the code written in return will be called ?
+
     useEffect(() => {
         console.log('DimensionOnChangeEvent called');
         const subscription = Dimensions.addEventListener("change",
@@ -34,7 +36,7 @@ export function DynamicUIDimensionAPIUseState() {
     const windowWidth = window.width;
     const windowHeight = window.height;
 
-    console.log('rendering ', { windowWidth }, { windowHeight })
+    console.log('DynamicUIDimensionAPIUseState rendering ', { windowWidth }, { windowHeight })
 
     return (
         <View style={styles.container}>

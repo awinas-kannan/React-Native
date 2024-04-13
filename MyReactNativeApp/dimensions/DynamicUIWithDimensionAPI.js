@@ -2,10 +2,10 @@ import { View, Text, StyleSheet, Dimensions } from 'react-native'
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
-console.log('rendering ', {windowWidth}, {windowHeight})
+
 
 export function DynamicUIDimensionAPI() {
-    
+    console.log('rendering -- ', {windowWidth}, {windowHeight})
     return (
 
         <View style={styles.container}>

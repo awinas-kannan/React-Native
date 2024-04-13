@@ -552,7 +552,7 @@ Dimension :
  -> Screen -> Entire physical display of the device (Include notch/ status bars / System NAV Bars)
  -> Window -> Area occupied by APPs ui
  
- Dimension API  has some drawbacks. that prevents it from using it fro creating Synamic user interface
+ Dimension API  has some drawbacks. that prevents it from using it fro creating Dynamic user interface
 
  41 : Dimension API drawback
   -> When the device orientation changes , width and height changes... But this will not update the Dimension APIs widht and height..
@@ -561,7 +561,7 @@ Dimension :
 
   Now the height & widht values will be changed ,but its not reflected...
 
-   Only when the device is restated. , the values are changed.. ( Click on the ios device and click R)
+   Only when the device is restarted. , the values are changed.. ( Click on the ios device and click R)
    LOG  rendering  {"windowWidth": 932} {"windowHeight": 430}
    LOG  rendering  {"windowWidth": 430} {"windowHeight": 932}
 

@@ -105,7 +105,7 @@ export default function App() {
     // <FlexWrapLayout/>
     // <RowGapAndColumnGap/>
     // <FlexBasisGrowShrink/>
-    <WidthHeightBasics/>
+    // <WidthHeightBasics/>
     // <AbsoluteAndRelativePositionLayout/>
 
     /*
@@ -126,7 +126,7 @@ export default function App() {
     * Lists
     */
     // <RenderListUsingScrollViewAndMap />
-      // <FlatListComp/>
+      <FlatListComp/>
       // <FlatListRNDoc/>
       // <FlatListRNStateChangeDoc/>
     //  <SectionListComp/>

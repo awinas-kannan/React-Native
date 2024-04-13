@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, SafeAreaView, View, Platform } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, View, Platform, StatusBar } from 'react-native';
 
 const PlatformSafeAreaViewComp = () => {
     return (
@@ -14,7 +14,8 @@ const PlatformSafeAreaViewComp = () => {
 const styles = StyleSheet.create({
     safeContainer: {
         flex: 1,
-        backgroundColor: 'plum'
+        backgroundColor: 'plum',
+        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
     },
     container: {
         flex: 1,
