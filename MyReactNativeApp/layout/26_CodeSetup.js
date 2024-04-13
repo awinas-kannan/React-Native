@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: 50,
         borderWidth: 10,
+        borderRadius: 100,
         borderColor: 'gold'
     }
 });

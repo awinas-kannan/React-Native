@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         marginTop: 8,
         backgroundColor: 'aliceblue',
         minHeight: 200,
-        alignItems : 'center'
+        // alignItems : 'center'
     },
     box: {
         width: 50,

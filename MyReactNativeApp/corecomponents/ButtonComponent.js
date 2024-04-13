@@ -106,6 +106,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         marginHorizontal: 16,
+        bcolor :'plum'
     },
     title: {
         textAlign: 'center',

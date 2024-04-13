@@ -119,10 +119,10 @@ Download Xcode :(
 
 7 : React Native Core Components :
     https://reactnative.dev/docs/intro-react-native-components
-    React Navtive components :
+    React Native components :
       -> Native compnents
-      -> Core components
-      -> Community components
+          -> Core components
+          -> Community components
 
     React native does not incorporate DOM. So JSX Tags that we use in react wont work ( <div> <p>).
 
@@ -198,6 +198,10 @@ Download Xcode :(
 
 If this Buttonton doesn't look right for your app, you can build your own button using Pressable
 
+Check :
+  onPress={ handleButtonPress('Press me 1')} //Calls the fucntion while loading itself
+  onPress={() => handleButtonPress('Press me 1')}. // Stops from calling the function while loading...
+
  13 : Pressable
  https://reactnative.dev/docs/pressable
 
@@ -259,7 +263,7 @@ If this Buttonton doesn't look right for your app, you can build your own button
   -> Styling across iOS and Android
  
  https://reactnative.dev/docs/height-and-width
- Doc : HeightAndWidth.js
+ Doc : HeightAndWidthStyle.js
  Fixed Dimensions:
  The general way to set the dimensions of a component is by adding a fixed width and height to style. All dimensions in React Native are unitless, and represent density-independent pixels.
 
@@ -372,11 +376,40 @@ Flex BoxHas 2 items :
  27 : Flex
  https://reactnative.dev/docs/flexbox
 
+Read : container cross vs main axis in RN ( chatgpt)
+###
+Main Axis and Cross Axis in React Native:
+Main Axis: This is the primary axis along which flex items are laid out within a flex container. The direction of the main axis is determined by the flexDirection property of the parent container.
+
+If flexDirection: 'row'; (default), the main axis is horizontal (left to right).
+If flexDirection: 'column';, the main axis is vertical (top to bottom).
+Cross Axis: This is the perpendicular axis to the main axis. It runs across the main axis and is used to align flex items that do not stretch along the main axis.
+
+Key Properties and Alignments in React Native:
+Main Axis Properties:
+
+flexDirection: Defines the direction of the main axis ('row', 'row-reverse', 'column', 'column-reverse').
+justifyContent: Controls alignment along the main axis ('flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'space-evenly').
+alignItems: Controls alignment of flex items along the cross axis ('flex-start', 'flex-end', 'center', 'stretch', 'baseline').
+Cross Axis Properties:
+
+alignItems: Aligns flex items along the cross axis.
+alignSelf: Overrides alignItems for individual flex items.
+alignContent: Aligns a flex container's lines within the flex container when there is extra space in the cross axis.
+###
+
  View by Default has flex. (Created based on children)
  If no children, it will not be visible.
  To occupy th whole screen use flex :1 .
+
+ Layout with Flexbox
+ A component can specify the layout of its children using the Flexbox algorithm. Flexbox is designed to provide a consistent layout on different screen sizes.
+
+ You will normally use a combination of flexDirection, alignItems, and justifyContent to achieve the right layout.
  
  If no flex is added , then only the existin prop of box is considered.. 
+
+ Flexbox works the same way in React Native as it does in CSS on the web, with a few exceptions. The defaults are different, with flexDirection defaulting to column instead of row, alignContent defaulting to flex-start instead of stretch, flexShrink defaulting to 0 instead of 1, the flex parameter only supporting a single number.
 
  28 : Flex Direction
       column 
@@ -393,6 +426,8 @@ column-reverse Align children from bottom to top. If wrapping is enabled, then t
 row-reverse Align children from right to left. If wrapping is enabled, then the next line will start under the first item on the right of the container.
 
  29 : Justify Content
+ 
+Flex direcion : column
  |------> Cross
  |
  |
@@ -401,6 +436,21 @@ row-reverse Align children from right to left. If wrapping is enabled, then the 
  +
 Main
 
+
+Flex direcion : row
+ |------> main
+ |
+ |
+ |
+ |
+ +
+cross
+
+    flexDirection: 'row', // Main axis is horizontal (left to right) if 'column' -> main axis is top to bottom
+    justifyContent: 'space-between', // Align items along the main axis
+    alignItems: 'center', // Align items along the cross axis
+
+
  justifyContent describes how to align children within the main axis of their container
 
  For example, you can use this property to center a child horizontally within a container with flexDirection set to row or vertically within a container with flexDirection set to column.
@@ -408,6 +458,9 @@ Main
  30 : Align Items
 
  alignItems describes how to align children along the cross axis of their container. It is very similar to justifyContent but instead of applying to the main axis, alignItems applies to the cross axis.
+
+ For stretch to have an effect, children must not have a fixed dimension along the secondary axis. In the following example, setting alignItems: stretch does nothing until the width: 50 is removed from the children.
+
  
  31 : Align Self
 
@@ -433,6 +486,7 @@ When wrapping lines, alignContent can be used to specify how the lines are place
  Column Gap -> Space b/w columns
  Gap -> when Both Rows & Column space are same
 
+ You can use flexWrap and alignContent alongwith gap to add consistent spacing between items.
 
  35 : Flex Basis
  Setting the flexBasis of a child is similar to setting the width of that child if its parent is a container with flexDirection: row
@@ -469,13 +523,13 @@ When wrapping lines, alignContent can be used to specify how the lines are place
  The position type of an element defines how it is positioned within its parent.
 
 absolute When positioned absolutely, an element doesn't take part in the normal layout flow. It is instead laid out independent of its siblings. The position is determined based on the top, right, bottom, and left values.
-{{{It does not align based on child.. its based on Parent}}}
+{{{It does not align based on child.. its based on Parent}}} //not sure
 
 When to use ? When you want something to be in precious position
 
 relative (default value) By default, an element is positioned relatively. This means an element is positioned according to the normal flow of the layout, and then offset relative to that position based on the values of top, right, bottom, and left. The offset does not affect the position of any sibling or parent elements.
 
-{{aligned based on siblings}}
+{{aligned based on siblings}} //not sure
 
 39 : Dynamic User Interface
 Currently our learning is based on iphone 14+ and pixel 8 pro
@@ -484,7 +538,7 @@ Device sizes may vary ranging from compact phones tp larger devices like ipads a
 
 Our app ui should be responsive in diff devices..
 
-On Same device , a user might opt for potraid mode other may opt for landscape mode
+On Same device , a user might opt for potrait mode other may opt for landscape mode
 
 40 : Dimension API
 
@@ -1295,5 +1349,80 @@ Tc(Touch Computer) - 52 72 ..
 -> Update SSP
 -> Do we have camera aceess / walmart libraries
 -> 
+
+
+
+Rough Notes :
+
+ 1) On Successful Login , Show the club number of user
+    
+    Show the MODEL
+
+
+  Home Screen
+   -> Create Header
+   ->    
+
+
+
+
+
+-> SSP changes
+-> self learning
+-> Check with nazal on living design
+-> Check if web - mobile can be developed
+-> Come up with timelines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

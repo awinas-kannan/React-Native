@@ -39,6 +39,7 @@ const AbsoluteAndRelativePositionLayout = () => {
                         top: 75,
                         left: 75,
                         position,
+                        // position : 'absolute',
                         backgroundColor: 'grey',
                     },
                 ]}

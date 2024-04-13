@@ -27,10 +27,32 @@ export const AlertAPIComponent = () => {
             { text: 'OK', onPress: () => console.log('OK Pressed') },
         ]);
 
+    const createAndroidButtonAlert = () =>
+        Alert.alert(
+            'Alert Title',
+            'My Alert Msg',
+            [
+                {
+                    text: 'Cancel',
+                    onPress: () => Alert.alert('Cancel Pressed'),
+                    style: 'cancel',
+                },
+            ],
+            {
+                cancelable: true,
+                onDismiss: () =>
+                    Alert.alert(
+                        'This alert was dismissed by tapping outside of the alert dialog.',
+                    ),
+            },
+        );
+
+
     return (
         <View style={styles.container}>
             <Button title='2-Button Alert' onPress={createTwoButtonAlert} />
             <Button title={'3-Button Alert'} onPress={createThreeButtonAlert} />
+            <Button title={'Android Tap Outside (onDismiss)'} onPress={createAndroidButtonAlert} />
         </View>
     );
 };

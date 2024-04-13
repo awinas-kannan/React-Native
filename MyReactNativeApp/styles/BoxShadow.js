@@ -50,7 +50,7 @@ const styles = StyleSheet.create(
         },
         boxShadowAndroid: {
             shadowColor: 'black',
-            elevation: 5
+            elevation: 30
         },
         lightGreenBox: {
             backgroundColor: 'lightgreen',

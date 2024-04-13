@@ -10,9 +10,11 @@ export const FlexDirectionBasics = () => {
             values={['column', 'row', 'row-reverse', 'column-reverse']}
             selectedValue={flexDirection}
             setSelectedValue={setflexDirection}>
-            <View style={[styles.box, { backgroundColor: 'powderblue' }]} ><Text style={{ textAlign: 'center' }}>1</Text></View>
+            <View style={[styles.box, { backgroundColor: 'powderblue' }]} ><Text style={{ textAlign: 'center'}}>1</Text></View>
             <View style={[styles.box, { backgroundColor: 'skyblue' }]} ><Text style={{ textAlign: 'center' }}>2</Text></View>
             <View style={[styles.box, { backgroundColor: 'steelblue' }]} ><Text style={{ textAlign: 'center' }}>3</Text></View>
+            <View style={[styles.box, { backgroundColor: 'firebrick' }]} ><Text style={{ textAlign: 'center' }}>4</Text></View>
+            <View style={[styles.box, { backgroundColor: 'grey' }]} ><Text style={{ textAlign: 'center' }}>5</Text></View>
         </PreviewLayout>
     );
 };
@@ -48,9 +50,10 @@ const PreviewLayout = ({
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: .5,
         marginTop: 8,
         backgroundColor: 'aliceblue',
+        flexWrap: 'wrap',
     },
     box: {
         // flex :1 ,

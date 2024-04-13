@@ -5,7 +5,8 @@ export const FlexBasisGrowShrink = () => {
     const [powderblue, setPowderblue] = useState({
         flexGrow: 0,
         flexShrink: 1,
-        flexBasis: 'auto',
+        // flexBasis: 'auto',
+        flexBasis: 100,
     });
     const [skyblue, setSkyblue] = useState({
         flexGrow: 1,
@@ -90,7 +91,7 @@ const BoxInfo = ({ color, flexBasis, flexShrink, setStyle, flexGrow }) => (
         </View>
         <Text style={styles.label}>flexBasis</Text>
         <TextInput
-            value={flexBasis}
+            value={flexBasis.toString()}
             style={styles.input}
             onChangeText={fB =>
                 setStyle(value => ({
@@ -101,7 +102,7 @@ const BoxInfo = ({ color, flexBasis, flexShrink, setStyle, flexGrow }) => (
         />
         <Text style={styles.label}>flexShrink</Text>
         <TextInput
-            value={flexShrink}
+            value={flexShrink.toString()}
             style={styles.input}
             onChangeText={fS =>
                 setStyle(value => ({
@@ -112,7 +113,7 @@ const BoxInfo = ({ color, flexBasis, flexShrink, setStyle, flexGrow }) => (
         />
         <Text style={styles.label}>flexGrow</Text>
         <TextInput
-            value={flexGrow}
+            value={flexGrow.toString()}
             style={styles.input}
             onChangeText={fG =>
                 setStyle(value => ({
@@ -128,10 +129,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         paddingHorizontal: 10,
-        paddingTop : 50
+        paddingTop : 50,
+        backgroundColor: 'ivory',
     },
     box: {
-        flex: 1,
+        // flex: 1,
         height: 50,
         width: 50,
     },
@@ -149,7 +151,8 @@ const styles = StyleSheet.create({
     previewContainer: {
         flex: 1,
         flexDirection: 'row',
-        backgroundColor: 'aliceblue',
+        backgroundColor: 'plum',
+        alignItems: 'center',
     },
     row: {
         flex: 1,

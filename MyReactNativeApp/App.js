@@ -33,7 +33,7 @@ import PlatformSafeAreaViewComp_2 from './otherconcepts/2.PlatFormSpecificCode';
 import { PlatformButton } from './otherconcepts/platforms/PlatformButton';
 import { BoxModelRN } from './styles/BoxModel';
 import { BoxShadowRN } from './styles/BoxShadow';
-import FlexDimensionsBasics, { FixedDimensionsBasics, PercentageDimensionsBasics } from './styles/HeightAndWidthStyle';
+import  {FlexDimensionsBasics,FixedDimensionsBasics, PercentageDimensionsBasics } from './styles/HeightAndWidthStyle';
 import { MultipleStyles } from './styles/MultipleStyles';
 import { StyleInheritance } from './styles/StyleInheritance';
 import RenderListUsingScrollViewAndMap from './corecomponents/list/RenderListUsingViewAndMap';
@@ -47,6 +47,7 @@ import SwitchComponentDoc from './corecomponents/SwitchComponentDoc';
 import LoginForm from './LoginForm';
 import KeyboardAvoidingComponent from './corecomponents/KeyboardAvoidingViewComp';
 import NetworkingGetPostErrorHandling from './networking/NetworkingGetPostErrorHandling';
+import JustifyContentAndAlignItems from './layout/JustifyContentAndAlignItems';
 
 export default function App() {
 
@@ -98,12 +99,13 @@ export default function App() {
     //  <FlexDirectionBasics/>
     // <JustifyContentBasics></JustifyContentBasics>
     // <AlignItemsLayout></AlignItemsLayout>
+    // <JustifyContentAndAlignItems/>
     // <AlignSelfLayout/>
     // <AlignContentLayout/>
     // <FlexWrapLayout/>
     // <RowGapAndColumnGap/>
     // <FlexBasisGrowShrink/>
-    // <WidthHeightBasics/>
+    <WidthHeightBasics/>
     // <AbsoluteAndRelativePositionLayout/>
 
     /*
@@ -144,7 +146,7 @@ export default function App() {
     * Networking
     */
 
-    <NetworkingGetPostErrorHandling/>
+    // <NetworkingGetPostErrorHandling/>
 
   );
 };

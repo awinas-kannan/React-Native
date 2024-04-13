@@ -15,14 +15,15 @@ const WidthHeightBasics = () => {
         <PreviewLayout
             widthType={widthType}
             heightType={heightType}
-            widthValues={['auto', 300, '80%']}
-            heightValues={['auto', 200, '60%']}
+            widthValues={['auto', 300, '60%', '80%', '100%']}
+            heightValues={['auto', 200, '60%', '80%', '100%']}
             setWidthType={setWidthType}
             setHeightType={setHeightType}>
             <View
                 style={{
                     alignSelf: 'flex-start',
                     backgroundColor: 'aliceblue',
+                    // flex : 1,
                     height: heightType,
                     width: widthType,
                     padding: 15,
@@ -44,7 +45,7 @@ const PreviewLayout = ({
     setWidthType,
     setHeightType,
 }) => (
-    <SafeAreaView style={{ flex: 1, padding: 50 ,backgroundColor : 'plum' , alignItems : 'center'}}>
+    <SafeAreaView style={{ flex: 1, padding: 50, backgroundColor: 'plum', alignItems: 'center' }}>
         <View style={styles.row}>
             <Text style={styles.label}>width </Text>
             {widthValues.map(value => (

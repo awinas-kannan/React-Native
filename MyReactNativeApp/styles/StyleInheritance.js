@@ -39,7 +39,8 @@ const styles = StyleSheet.create(
             color: "blue"
         },
         boldText: {
-            fontWeight: "bold"
+            fontWeight: "bold",
+            fontStyle: 'italic'
         },
         box: {
             height: "50%",

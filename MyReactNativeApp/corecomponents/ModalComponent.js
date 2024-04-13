@@ -11,6 +11,7 @@ export const ModalRN = () => {
                 visible={modalVisible}
                 onRequestClose={() => {
                     Alert.alert('Modal has been closed.');
+                    console.log('Modal is open and back button is clicked.');
                     setModalVisible(!modalVisible);
                 }}
                 >

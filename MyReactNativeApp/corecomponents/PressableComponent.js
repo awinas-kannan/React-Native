@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     },
     wrapperCustom: {
         borderRadius: 8,
-        padding: 6,
+        padding: 16,
     },
     logBox: {
         padding: 20,

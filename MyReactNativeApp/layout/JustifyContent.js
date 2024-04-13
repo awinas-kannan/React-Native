@@ -20,6 +20,8 @@ export const JustifyContentBasics = () => {
             <View style={[styles.box, { backgroundColor: 'powderblue' }]} ><Text style={{ textAlign: 'center', marginTop: 20, fontSize: 25 }}>1</Text></View>
             <View style={[styles.box, { backgroundColor: 'skyblue' }]} ><Text style={{ textAlign: 'center', marginTop: 20, fontSize: 25 }}>2</Text></View>
             <View style={[styles.box, { backgroundColor: 'steelblue' }]} ><Text style={{ textAlign: 'center', marginTop: 20, fontSize: 25 }}>3</Text></View>
+            <View style={[styles.box, { backgroundColor: 'firebrick' }]} ><Text style={{ textAlign: 'center' }}>4</Text></View>
+            <View style={[styles.box, { backgroundColor: 'grey' }]} ><Text style={{ textAlign: 'center' }}>5</Text></View>
         </PreviewLayout>
     );
 };
@@ -31,7 +33,7 @@ const PreviewLayout = ({
     selectedValue,
     setSelectedValue,
 }) => (
-    <View style={{ padding: 10, flex: 1 }}>
+    <View style={{ padding: 50, flex: 1 }}>
         <Text style={styles.label}>{label}</Text>
         <View style={styles.row}>
             {values.map(value => (

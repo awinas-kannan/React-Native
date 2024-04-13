@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
         marginTop: 8,
         backgroundColor: 'aliceblue',
         minHeight: 200,
+        flexDirection: 'row',
     },
     box: {
         width: 50, //comment this to see how stretch works
