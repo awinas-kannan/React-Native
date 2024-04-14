@@ -30,7 +30,7 @@ export function StackNavigationCodeEv() {
             }
 
         }}>
-            <Stack.Screen name='Home' component={HomeScreen}
+            <Stack.Screen name='Home' component={HomeScreen} initialParams={{ result: 'Value from initialParams' }}
                 options={{
                     title: 'Welcome Home !!!',
                     // headerStyle: {

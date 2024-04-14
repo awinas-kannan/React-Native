@@ -819,7 +819,7 @@ It check the safe area of that device and then renders the view
 
   Stack Navigator vs Native Stack navigator
 
-  Stack Navigator in React Navigation:
+  ## Stack Navigator in React Navigation:
 
   React Navigation's Stack Navigator is a JavaScript-based navigation solution provided by the React Navigation library.
   
@@ -829,7 +829,7 @@ It check the safe area of that device and then renders the view
   
   React Navigation's Stack Navigator is a cross-platform solution and does not rely on native platform navigation components.
 
-  Native Navigation Components:
+  ## Native Navigation Components:
 
   On the other hand, native stack navigators refer to the built-in navigation components provided by the native platform (e.g., UINavigationController on iOS and FragmentManager on Android).
   
@@ -844,6 +844,10 @@ It check the safe area of that device and then renders the view
 
   npm install @react-navigation/native-stack
   
+
+  ******
+  One thing to keep in mind is that while @react-navigation/native-stack offers native performance and exposes native features such as large title on iOS etc., it may not be as customizable as @react-navigation/stack depending on your needs. So if you need more customization than what's possible in this navigator, consider using @react-navigation/stack instead - which is a more customizable JavaScript based implementation.
+  *****
 
   74 : Navigation b/w Screens
   1) Navigation Prop
