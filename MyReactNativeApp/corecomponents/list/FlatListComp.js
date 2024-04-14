@@ -29,7 +29,7 @@ export function FlatListComp() {
                     ItemSeparatorComponent={
                         <View
                             style={{
-                                height: 16,
+                                height: 20,
                             }}
                         />
                     }

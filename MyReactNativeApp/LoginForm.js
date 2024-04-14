@@ -38,7 +38,7 @@ const LoginForm = () => {
     return (
         <KeyboardAvoidingView
             behavior="padding"
-            keyboardVerticalOffset={Platform.OS === "ios" ? 100 : 0}
+            keyboardVerticalOffset={Platform.OS === "ios" ? 100 : 50}
             style={styles.container}
         >
             <View style={styles.form}>

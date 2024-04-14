@@ -14,9 +14,9 @@ const MultiLineTextInputRNDoc = () => {
         }}>
             <View
                 style={{
-                    backgroundColor: 'ivory',
-                    borderBottomColor: 'red',
-                    borderBottomWidth: 4,
+                    backgroundColor: value === '' ? 'grey' : value,
+                    borderBottomColor: 'blue',
+                    borderBottomWidth: 10,
                 }}>
                 <TextInput
                     editable
@@ -30,7 +30,7 @@ const MultiLineTextInputRNDoc = () => {
                         {
                             padding: 10,
                             minHeight: 100,
-                            textAlignVertical : 'top'
+                            textAlignVertical: 'top'
                         }}
 
                 />
