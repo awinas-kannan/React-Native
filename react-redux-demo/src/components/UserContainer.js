@@ -8,7 +8,7 @@ function UsersContainer({ userData, fetchUsersData }) {
     useEffect(() => {
         fetchUsersData()
     }, [])
-    
+
     return userData.loading ? (
         <h2>Loading</h2>
     ) : userData.error ? (

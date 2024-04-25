@@ -97,7 +97,7 @@ export default function App() {
     //  <LayoutCodeEvol></LayoutCodeEvol>
     //  <Flex></Flex>
     //  <FlexDirectionBasics/>
-    // <JustifyContentBasics></JustifyContentBasics>
+    <JustifyContentBasics></JustifyContentBasics>
     // <AlignItemsLayout></AlignItemsLayout>
     // <JustifyContentAndAlignItems/>
     // <AlignSelfLayout/>
@@ -146,7 +146,7 @@ export default function App() {
     * Networking
     */
 
-    <NetworkingGetPostErrorHandling/>
+    // <NetworkingGetPostErrorHandling/>
 
   );
 };
