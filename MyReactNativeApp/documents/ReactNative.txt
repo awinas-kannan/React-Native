@@ -1336,6 +1336,18 @@ npm install axios
 Generator Functions
 yield keyword in Generator Functions
 
+Create Files in follwoing seq form:
+1) userActions.js
+2) userReducer.js
+3) api.js
+4) saga.js
+5) rootSaga.js
+6) rootReducer.js
+7) store.js
+
+8) selectors.js
+9) userList.js (component)
+10) App.js (Wrap it with Provider)
 
 
 #######################################################################################################################################################################################################################
